@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/boom.css" type="text/css">
+    <link rel="stylesheet" href="css/find_game.css" type="text/css">
+    <link rel="stylesheet" href="css/math.css" type="text/css">
+    <title>华钜活动</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="find_game">
+        <div class="head">
+            <p class="text-t">找出1024数字</p>
+        </div>
+        <div id="yp">第一行是 X 坐标轴 ————> </div>
+        <div id="xp">第</br>一</br>列</br>是</br>Y</br>坐</br>标</br>轴</br>&nbsp;|</br>&nbsp;|</br>&thinsp;V</div>
+        <div id="help"><strong>提示：只会存在一个连续的“1024”字符(存在换行的可能)</strong></div>
+        <table id="tables" border="1" cellspacing="0" cellpadding="0">
+
+        </table>
+
+        <div id="answer">
+            1的坐标:
+            X:<input class="input_an" type="text" name="firstname" value="">
+            Y:<input class="input_an" type="text" name="firstname" value="">
+
+            0的坐标:
+            X:<input class="input_an" type="text" name="firstname" value="">
+            Y:<input class="input_an" type="text" name="firstname" value="">
+            <br>
+            <br>
+            2的坐标:
+            X:<input class="input_an" type="text" name="firstname" value="">
+            Y:<input class="input_an" type="text" name="firstname" value="">
+
+            4的坐标:
+            X:<input class="input_an" type="text" name="firstname" value="">
+            Y:<input class="input_an" type="text" name="firstname" value="">
+
+        </div>
+        <div style="margin-top:3%;text-align: center"><button>提交</button></div>
+    </div>
+    <div id="boom_main">
+        <div class="head">
+            <p class="text-t">定时炸弹</p>
+        </div>
+        <div style="text-align: center">剪 红线或者绿线 运气来了</div>
+        <div id="content">
+        </div>
+
+        <div id="content2">
+        </div>
+
+        <div id="content3">
+            <strong id="timer">00 : 00</strong>
+        </div>
+
+        <div id="content4">
+            <button id="red">剪红线</button>
+            <button id="green">剪绿线</button>
+        </div>
+    </div>
+    <div id="math">
+        <div class="head">
+            <p class="text-t">算一算</p>
+        </div>
+        <div id="mathHelp">请算出X的值是多少?</div>
+        <div id="mathContent">
+            <p>aX<sup>2</sup> + bX = -c</p>
+        </div>
+        <div id="mathAnswer">
+            X的值是 : <input style="width: 80px" type="text" name="firstname" value="">
+        </div>
+        <div style="margin-top:3%;text-align: center"><button>提交</button></div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/common.js"></script>
+<script src="js/math.js"></script>
+<script src="js/boom.js"></script>
+<script src="js/find_game.js"></script>
+</html>
