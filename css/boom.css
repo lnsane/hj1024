@@ -1,24 +1,25 @@
 #boom_main {
     position: absolute;
     background-color: #5a5a5a;
-    width:500px;
-    height:600px;
-    border:1px solid #00F;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #00F;
     display: none;
     z-index: 3;
 }
 
-#content{
+#content {
     margin-top: 100px;
     background-color: red;
     height: 10px;
 }
 
-#content2{
+#content2 {
     margin-top: 100px;
     background-color: green;
     height: 10px;
 }
+
 #content3 {
     margin-top: 70px;
     margin-left: 30%;
@@ -39,11 +40,13 @@
     text-align: center;
     font-size: 40px;
 }
+
 #red {
     width: 100px;
     height: 40px;
     background-color: red;
 }
+
 #green {
     width: 100px;
     height: 40px;

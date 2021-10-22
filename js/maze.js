@@ -7,6 +7,7 @@ const createCell = (x, y) => ({
     right: false,
     isVisited: false
 });
+
 class Maze {
     constructor(row, col) {
         this.row = row;
@@ -25,7 +26,7 @@ class Maze {
             }
         }
 
-        const start_cell = { x: 0, y: 0 };
+        const start_cell = {x: 0, y: 0};
         this.roomline.push(start_cell);
         this.maze_cells[0][0].left = true;
         this.maze_cells[this.row - 1][this.col - 1].right = true;
@@ -35,23 +36,23 @@ class Maze {
     calcCells(x, y) {
         var neighbors = [];
         if (x - 1 >= 0 && !this.maze_cells[x - 1][y].isVisited) {
-            neighbors.push({ 'x': x - 1, 'y': y })
+            neighbors.push({'x': x - 1, 'y': y})
         }
         if (x + 1 < this.row && !this.maze_cells[x + 1][y].isVisited) {
-            neighbors.push({ 'x': x + 1, 'y': y })
+            neighbors.push({'x': x + 1, 'y': y})
         }
         if (y - 1 >= 0 && !this.maze_cells[x][y - 1].isVisited) {
-            neighbors.push({ 'x': x, 'y': y - 1 })
+            neighbors.push({'x': x, 'y': y - 1})
         }
         if (y + 1 < this.col && !this.maze_cells[x][y + 1].isVisited) {
-            neighbors.push({ 'x': x, 'y': y + 1 })
+            neighbors.push({'x': x, 'y': y + 1})
         }
 
         if (neighbors.length) {
-            const current = { x, y };
+            const current = {x, y};
             const next = neighbors[Math.floor(Math.random() * neighbors.length)];
             this.maze_cells[next.x][next.y].isVisited = true;
-            this.roomline.push({ 'x': next.x, 'y': next.y });
+            this.roomline.push({'x': next.x, 'y': next.y});
             this.breakWall(current, next);
             this.calcCells(next.x, next.y);
         } else {
@@ -178,11 +179,11 @@ class Rat {
 const maze = new Maze(+13, +13);
 createCellElement(maze.maze_cells);
 const rat = new Rat(maze.maze_cells);
-rat.setPoint({ x: 0, y: 0 }, { x: maze.maze_cells.length - 1, y: maze.maze_cells[0].length - 1 });
+rat.setPoint({x: 0, y: 0}, {x: maze.maze_cells.length - 1, y: maze.maze_cells[0].length - 1});
 document.querySelectorAll('.cell')[0].className += ' rat';
 
 window.addEventListener('keyup', e => {
-    let action = { go: 0 };
+    let action = {go: 0};
     switch (e.keyCode) {
         case 38:
             action = rat.tryMove('top');

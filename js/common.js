@@ -61,44 +61,44 @@ window.onload = function () {
         // 位置赋值
         next_div.style.left = next_div_left;
         next_div.style.top = next_divtop;
+        this.showMask();
     }, 500)
 
 }
 
-var
-    mask=document.getElementById("mask"),
-    loginBox=document.getElementById('loginBox')
+var mask = document.getElementById("mask"),
+    loginBox = document.getElementById('loginBox')
 
 
-    function addEvent(ele,type,hander){
-    if(ele.addEventListener){
-        ele.addEventListener(type,hander,false);
-    }else if(ele.attachEvent){
-        ele.attachEvent('on'+type,hander);
-    }else{
-        ele['on'+type]=hander;
+function addEvent(ele, type, hander) {
+    if (ele.addEventListener) {
+        ele.addEventListener(type, hander, false);
+    } else if (ele.attachEvent) {
+        ele.attachEvent('on' + type, hander);
+    } else {
+        ele['on' + type] = hander;
     }
 }
 
-function showMask(){
-    mask.style.display='block';
-    loginBox.style.display='block';
+function showMask() {
+    mask.style.display = 'block';
+    loginBox.style.display = 'block';
     autoCenter(loginBox);
 }
 
-function hideMask(){
-    mask.style.display='none';
+function hideMask() {
+    mask.style.display = 'none';
 }
 
-function hidebox(){
-    loginBox.style.display="none";
+function hidebox() {
+    loginBox.style.display = "none";
     hideMask()
 }
 
-function hid(e){
-    var event = e||window.event;
-    if(e.target.id==="mask"){
-        mask.style.display='none';
+function hid(e) {
+    var event = e || window.event;
+    if (e.target.id === "mask") {
+        mask.style.display = 'none';
     }
 }
 
@@ -125,7 +125,7 @@ function checkIsNext() {
     var Maze_div = document.getElementById("maze");
     var next_div = document.getElementById("next");
     if (window.ti === 0) {
-        this.displayNone(find_game, math_div, main_div,Maze_div,next_div);
+        this.displayNone(find_game, math_div, main_div, Maze_div, next_div);
     } else if (window.ti === 1) {
         main_div.style.display = "block";
         this.displayNone(find_game, math_div, Maze_div);
@@ -145,7 +145,7 @@ function checkIsNext() {
         this.displayNone(find_game, math_div, main_div);
     } else if (window.ti === 5) {
         next_div.style.display = "block";
-        this.displayNone(find_game, math_div, main_div,Maze_div);
+        this.displayNone(find_game, math_div, main_div, Maze_div);
     }
 }
 
@@ -156,7 +156,7 @@ function displayNone() {
     }
 }
 
-function next_t(){
+function next_t() {
     window.ti++
 }
 

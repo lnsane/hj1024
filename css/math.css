@@ -1,13 +1,14 @@
 #math {
     position: absolute;
     background-color: #5a5a5a;
-    width:500px;
-    height:600px;
-    border:1px solid #00F;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #00F;
     z-index: 4;
     display: none;
 }
-#mathContent{
+
+#mathContent {
     text-align: center;
     background-color: white;
     margin-left: 30%;
@@ -16,11 +17,13 @@
     padding-top: 5%;
     padding-bottom: 5%;
 }
-#mathHelp{
+
+#mathHelp {
     margin-top: 5%;
     text-align: center;
 }
-#mathAnswer{
+
+#mathAnswer {
     margin-top: 5%;
     text-align: center;
 }

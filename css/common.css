@@ -52,7 +52,8 @@
     z-index: 1000;
     top: 0;
 }
-#loginFarams{
+
+#loginFarams {
     margin-top: 14%;
     padding-left: 10%;
 }
@@ -61,10 +62,12 @@
     width: 200px;
     height: 40px;
 }
-#sumbitBtn{
+
+#sumbitBtn {
     margin-top: 10%;
     padding-left: 40%;
 }
-#loginSubmit{
+
+#loginSubmit {
     width: 50px;
 }

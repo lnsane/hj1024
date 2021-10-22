@@ -30,12 +30,10 @@ greenbtn.onclick = function () {
 }
 
 
-
-
 function startBoom() {
     var minute = 0;
     var sec = 12;
-    var t1 = setInterval(function() {
+    var t1 = setInterval(function () {
         sec--;
         var mt = minute
         var sc = sec
@@ -59,5 +57,5 @@ function startBoom() {
 
             }
         }
-    },1000)
+    }, 1000)
 }

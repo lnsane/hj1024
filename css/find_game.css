@@ -1,42 +1,49 @@
 #find_game {
     position: absolute;
     background-color: #767676;
-    width:500px;
-    height:600px;
-    border:1px solid #00F;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #00F;
     z-index: 1;
     display: none;
 }
-#find_game_text{
-    width:90px;
-    height:600px;
+
+#find_game_text {
+    width: 90px;
+    height: 600px;
     margin: 0px;
     word-break: normal;
     white-space: pre-line;
     word-wrap: break-word;
 }
-#tables{
+
+#tables {
     margin-left: 14%;
     margin-top: 2%;
 }
-.ths{
+
+.ths {
 }
 
-#xp{
+#xp {
     margin-top: 10%;
     padding-left: 4%;
     float: left;
 }
+
 #yp {
     text-align: center;
 }
-#help{
+
+#help {
     text-align: center;
 }
-#answer{
+
+#answer {
     margin-top: 1%;
     margin-left: 20%;
 }
-.input_an{
+
+.input_an {
     width: 10px;
 }
