@@ -14,38 +14,11 @@ if (system.win || system.mac || system.xll) {
 } else {
 
 }
-// window.onload = function() {
-//     var minute = 0;
-//     var sec = 12;
-//     var t1 = setInterval(function() {
-//         sec--;
-//         var mt = minute
-//         var sc = sec
-//         if (minute < 10) {
-//             mt = "0" + mt;
-//         }
-//         if (sec < 10) {
-//             sc = "0" + sc;
-//         }
-//         document.getElementById("timer").innerHTML = mt + " : " + sc;
-//         if (sec === 0 && minute === 0) {
-//             window.clearInterval(t1)
-//             setTimeout(function(){ boom(); }, 500);
-//         }
-//         if (sec === 0 ) {
-//             minute --;
-//             sec = 60;
-//             if (minute === 0) {
-//
-//             }
-//         }
-//
-//     }, 1000);
-//
-// }
+
 var redbtn = document.getElementById("red")
 
 var boom = function () {
+    this.next_t()
 }
 
 redbtn.onclick = boom
@@ -53,4 +26,38 @@ redbtn.onclick = boom
 var greenbtn = document.getElementById("green")
 greenbtn.onclick = function () {
     alert("恭喜")
+    this.next_t()
+}
+
+
+
+
+function startBoom() {
+    var minute = 0;
+    var sec = 12;
+    var t1 = setInterval(function() {
+        sec--;
+        var mt = minute
+        var sc = sec
+        if (minute < 10) {
+            mt = "0" + mt;
+        }
+        if (sec < 10) {
+            sc = "0" + sc;
+        }
+        document.getElementById("timer").innerHTML = mt + " : " + sc;
+        if (sec === 0 && minute === 0) {
+            window.clearInterval(t1)
+            setTimeout(function () {
+                boom();
+            }, 500);
+        }
+        if (sec === 0) {
+            minute--;
+            sec = 60;
+            if (minute === 0) {
+
+            }
+        }
+    },1000)
 }

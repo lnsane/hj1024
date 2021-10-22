@@ -1,8 +1,70 @@
-.head{
+.head {
     background-color: white;
     text-align: center;
 }
-.text-t{
+
+.text-t {
     margin: 0px;
     font-size: 40px;
+}
+
+#next {
+    position: absolute;
+    background-color: #5a5a5a;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #00F;
+    z-index: 5;
+    display: none;
+}
+
+#nextBnt {
+    margin-top: 50%;
+    margin-left: 45%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#loginBox {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    z-index: 2000;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+#loginBox p {
+    height: 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    padding: 6px 0 0 5px;
+    font-weight: bold;
+    color: #000
+}
+
+#mask {
+    background: rgba(100, 100, 100, 0.15);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+#loginFarams{
+    margin-top: 14%;
+    padding-left: 10%;
+}
+
+.loginBtn {
+    width: 200px;
+    height: 40px;
+}
+#sumbitBtn{
+    margin-top: 10%;
+    padding-left: 40%;
+}
+#loginSubmit{
+    width: 50px;
 }

@@ -15,3 +15,12 @@ var t = function () {
     document.getElementById("tables").innerHTML =head + body
 }
 t();
+
+var findSubmit = document.getElementById("findSubmit")
+
+var findSubmitfun = function () {
+    window.ti++
+}
+
+findSubmit.onclick = findSubmitfun
+

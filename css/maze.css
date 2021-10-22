@@ -1,0 +1,54 @@
+#maze {
+    position: absolute;
+    background-color: #5a5a5a;
+    width:500px;
+    height:600px;
+    border:1px solid #00F;
+    display: none;
+    z-index: 4;
+}
+#mazeHelp{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#mazeout{
+    float: right;
+}
+
+#cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+}
+
+.top {
+    border-top-color: #000;
+}
+
+.bottom {
+    border-bottom-color: #000;
+}
+
+.left {
+    border-left-color: #000;
+}
+
+.right {
+    border-right-color: #000;
+}
+
+.rat { background: orange!important; }
